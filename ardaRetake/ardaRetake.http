@@ -1,0 +1,19 @@
+### GET client by ID
+GET http://localhost:5000/api/clients/1
+Accept: application/json
+
+
+### POST new client with rental
+POST http://localhost:5000/api/clients
+Content-Type: application/json
+
+{
+  "client": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "address": "Main Street 123"
+  },
+  "carId": 1,
+  "dateFrom": "2025-06-10",
+  "dateTo": "2025-06-15"
+}
